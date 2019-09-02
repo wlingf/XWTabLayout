@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        android:layout_height="0dp"
+        android:background="@android:color/white" >
+    </FrameLayout>
+
+    <com.xw.xwtablayoutlib.CommonTabLayout
+        app:layout_constraintTop_toBottomOf="@id/frame_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        app:tl_iconHeight="23dp"
+        app:tl_iconWidth="23dp"
+        app:tl_textSelectColor="@color/colorAccent"
+        app:tl_textUnselectColor="#C5C5C7"
+        app:tl_textsize="11sp"
+        app:tl_underline_color="@android:color/white"
+        app:tl_underline_height="1dp"
+        app:tl_underline_gravity="TOP"/>
+
+</android.support.constraint.ConstraintLayout>
