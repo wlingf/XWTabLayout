@@ -4,7 +4,7 @@
 
 
 
-- ### 初始化XWTabLayout，建议在Application初始化
+- ### 1.初始化XWTabLayout，建议在Application初始化
 
 ```
 XWTabLayout.init(XWTabLayoutConfig.newBuilder(this)
@@ -13,7 +13,7 @@ XWTabLayout.init(XWTabLayoutConfig.newBuilder(this)
                 
 ````
 
-- ### 自定义图片加载框架
+- ### 2.自定义图片加载框架
 
 ```
 public class CustomTabLayoutLoader implements XWTabLayoutLoader {
@@ -26,5 +26,5 @@ public class CustomTabLayoutLoader implements XWTabLayoutLoader {
     }
 }
 ```               
-- ### 按照FlycoTabLayout的api进行相应的设置
+- ### 3.按照[FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)的api进行相应的设置
 
