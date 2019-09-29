@@ -25,6 +25,26 @@ public class CustomTabLayoutLoader implements XWTabLayoutLoader {
                 .into(view);
     }
 }
-```               
-- ### 3.按照[FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)的api进行相应的设置
+```
+
+- ### 3.修改CustomTabEntity 支持传入网络图片地址
+
+```
+
+public interface CustomTabEntity {
+    String getTabTitle();
+
+    @DrawableRes
+    int getTabSelectedIcon();
+
+    @DrawableRes
+    int getTabUnselectedIcon();
+
+    String getTabSelectUrl ();
+
+    String getTabUnSelectUrl ();
+}
+
+```
+- ### 4.按照[FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)的api进行相应的设置
 
